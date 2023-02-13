@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      host: 106.55.34.181
+      port: 27017
+      username: admin
+      password: "Chenyide"
+      authentication-database: admin
+      database: livegoods

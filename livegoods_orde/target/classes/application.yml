@@ -1,0 +1,21 @@
+server:
+  port: 9008
+spring:
+  application:
+    name: livegoods-order
+  profiles:
+    active: mongo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.55.34.181:3306/lcn?serverTimezone=Asia/Shanghai
+    username: root
+    password: chenyide
+tx-lcn:
+  client:
+    manager-address: 0.0.0.0:8070
+eureka:
+  client:
+    service-url:
+      defaultZone: http://106.55.34.181:8761/eureka/
+  instance:
+    prefer-ip-address: true

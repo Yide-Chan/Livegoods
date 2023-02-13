@@ -1,0 +1,17 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: livegoods-comments
+  profiles:
+    active: mongo
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://106.55.34.181:8761/eureka/
+livegoods:
+  comments:
+    defaultRows: 5
+

@@ -1,0 +1,22 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: livegoods-search
+  profiles:
+    active: es,commons
+  security: #配置静态Security用户名和密码，启动时加载
+    user:
+      name: livegoods
+      password: Chenyide
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://106.55.34.181:8761/eureka/
+livegoods:
+  search:
+    defaultRows: 5
+  img:
+    middle: 'group1/M00/00/00/'

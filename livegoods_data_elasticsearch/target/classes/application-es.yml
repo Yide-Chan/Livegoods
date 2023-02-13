@@ -1,0 +1,4 @@
+spring:
+  elasticsearch:
+    rest:
+      uris: http://106.55.34.181:9200

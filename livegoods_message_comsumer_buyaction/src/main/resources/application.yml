@@ -1,0 +1,16 @@
+livegoods:
+  lock:
+    buyAction: 'livegoods:buyaction:lock:key'
+spring:
+  application:
+    name: livegoods-consumer-order
+  profiles:
+    active: commons
+  redis:
+    host: 106.55.34.181
+  rabbitmq:
+    host: 106.55.34.181
+    port: 5672
+    username: livegoods
+    password: chenyide
+    virtual-host: /

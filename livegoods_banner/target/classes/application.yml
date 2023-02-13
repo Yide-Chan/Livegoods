@@ -1,0 +1,18 @@
+livegoods:
+  banner:
+    nginx:
+      server: http://106.55.34.181:8888/
+spring:
+  application:
+    name: livegoods-banner
+  profiles:
+    active: mongo
+
+server:
+  port: 9000
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://106.55.34.181:8761/eureka/

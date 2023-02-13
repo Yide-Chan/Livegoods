@@ -1,0 +1,22 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: livegoods-passport
+  profiles:
+    active: mongo
+  redis:
+    host: 106.55.34.181
+    port: 6379
+    database: 0
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://106.55.34.181:8761/eureka/
+livegoods:
+  passport:
+    validateCode:
+      #验证码前缀
+      prefix: 'livegoods:validateCode::'
