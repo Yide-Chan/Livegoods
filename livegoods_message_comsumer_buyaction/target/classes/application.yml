@@ -12,5 +12,5 @@ spring:
     host: 106.55.34.181
     port: 5672
     username: livegoods
-    password: chenyide
+    password: 123456
     virtual-host: /
